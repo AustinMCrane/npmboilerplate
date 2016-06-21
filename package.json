@@ -1,0 +1,50 @@
+{
+  "name": "npmboilerplate",
+  "version": "1.0.0",
+  "description": "starting point",
+  "homepage": "https://github.com/AustinMCrane/npmboilerplate#readme",
+  "main": "distribution/index.js",
+  "scripts": {
+    "test": "karma start",
+    "build": "babel --presets es2015,stage-0 -d dis/ src/",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "somepackage"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AustinMCrane/npmboilerplate.git"
+  },
+  "author": "Austin Crane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AustinMCrane/npmboilerplate/issues"
+  },
+  "peerDependencies": {
+    "react": "^0.14.0 || ^15.0.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.1.18",
+    "classnames": "^2.1.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.1.18",
+    "babel-core": "^6.1.18",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "babel-preset-stage-0": "^6.1.18",
+    "babel-register": "^6.9.0",
+    "chance": "^1.0.3",
+    "expect": "^1.20.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-cli": "^1.0.0",
+    "karma-mocha": "^1.0.1",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^1.7.0",
+    "mocha": "^2.3.0",
+    "webpack": "^1.13.1"
+  }
+}
